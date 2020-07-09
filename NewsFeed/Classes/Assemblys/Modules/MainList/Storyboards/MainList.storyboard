@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ssh-aF-rEq">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main List View Controller-->
+        <scene sceneID="Kmn-5j-c9i">
+            <objects>
+                <tableViewController storyboardIdentifier="MainListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ssh-aF-rEq" customClass="MainListViewController" customModule="NewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uc2-Xi-vjl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="ssh-aF-rEq" id="jXV-MH-IY0"/>
+                            <outlet property="delegate" destination="ssh-aF-rEq" id="0L7-Wa-soe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="I4C-Ch-wwp">
+                        <barButtonItem key="rightBarButtonItem" id="HHP-3h-T0J">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a1i-Z1-ukJ">
+                                <rect key="frame" x="334" y="0.0" width="60" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleColorEmojiUI" family=".Apple Color Emoji UI" pointSize="18"/>
+                                <state key="normal" title="🙂"/>
+                                <state key="selected" title="🤡"/>
+                                <state key="highlighted" title="🥴"/>
+                                <connections>
+                                    <action selector="categoryButtonAction:" destination="ssh-aF-rEq" eventType="touchUpInside" id="xkY-4s-dfJ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Os-Ag-VHn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="68"/>
+        </scene>
+    </scenes>
+</document>
